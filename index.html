@@ -4,13 +4,17 @@ layout: default
 
 <style>
     .rounded-5 { border-radius: 1rem; }
+    .stuff-bg {
+        background-size: cover;
+        background-position: 50% 50%;
+    }
 </style>
 
-<div class="container text-center">
+<div class="container mb-4 text-center" style="background: url('/assets/unsplash-laptop.jpg');">
     <img src="/assets/branding/bwtrans.png" alt="Ultimate Media"><br />
     <h1>👋 Hello there!</h1>
     <p>
-        We are a very <small>small</small>
+        We are a very small
         company that makes stuff.
     </p>
 </div>
@@ -27,7 +31,7 @@ layout: default
     >
         <div class="col">
             <div
-                class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                class="stuff-bg card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
                 style="background: url('/assets/unsplash-game.jpg');"
             >
                 <div class="d-flex
