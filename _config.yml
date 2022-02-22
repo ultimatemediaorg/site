@@ -4,12 +4,9 @@ nav:
     - name: C1200 Games
       image: /assets/unsplash-game.jpg
       link: /stuff/c1200-games
-      text: light
     - name: CoolStuff
       image: /assets/unsplash-news.jpg
       link: /stuff/coolstuff
-      text: dark
     - name: ChatSurf
       image: /assets/unsplash-surf.jpg
       link: /stuff/chatsurf
-      text: dark
