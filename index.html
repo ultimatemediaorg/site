@@ -25,17 +25,18 @@ layout: default
                 g-4
                 py-5"
     >
+        {% for stuff in site.nav.stuff %}
         <div class="col">
             <div
-                class="center-bg card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
-                style="background: url('/assets/unsplash-game.jpg');"
+                class="center-bg card card-cover h-100 overflow-hidden bg-dark rounded-5 shadow-lg"
+                style="background: url('{{ stuff.image }}');"
             >
                 <div class="d-flex
                             flex-column
                             h-100
                             p-5
                             pb-3
-                            text-white
+                            text-{{ stuff.text }}
                             text-shadow-1"
                 >
                     <h2 class="pt-5
@@ -44,39 +45,13 @@ layout: default
                                display-6
                                lh-1
                                fw-bold"
-                    >C1200 Games</h2>
-                    <a href="/stuff/c1200-games" class="btn btn-primary mt-auto">
+                    >{{ stuff.name }}</h2>
+                    <a href="{{ stuff.link }}" class="btn btn-primary mt-auto">
                         See Stuff
                     </a>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div
-                class="center-bg card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
-                style="background: url('/assets/unsplash-news.jpg');"
-            >
-                <div class="d-flex
-                            flex-column
-                            h-100
-                            p-5
-                            pb-3
-                            text-white
-                            text-shadow-1"
-                >
-                    <h2 class="pt-5
-                               mt-5
-                               mb-4
-                               display-6
-                               lh-1
-                               fw-bold
-                               text-dark"
-                    >CoolStuff</h2>
-                    <a href="/stuff/coolstuff" class="btn btn-primary mt-auto">
-                        See Stuff
-                    </a>
-                </div>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </div>
