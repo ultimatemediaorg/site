@@ -21,14 +21,3 @@
     vertical-align: -.125em;
     fill: currentColor;
 }
-
-.bg-inherit {
-    background: inherit;
-}
-
-.text-invert {
-    background: inherit;
-    background-clip: text;
-    color: transparent;
-    filter: invert(1) grayscale(1) contrast(9);
-}
