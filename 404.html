@@ -1,0 +1,25 @@
+---
+layout: default
+title: 404!
+permalink: /404.html
+---
+
+<h1 id="nf">
+    Stuff Not<br />
+    Found
+</h1>
+<p>
+    Oh dear! <a href="/">Home</a>?
+</p>
+  
+<script>
+    const nf = document.getElementById("nf");
+    
+    // https://stackoverflow.com/a/46545530
+    const jumble = ["Stuff", "Not", "Found"]
+      .map(value => ({ value, sort: Math.random() }))
+      .sort((a, b) => a.sort - b.sort)
+      .map(({ value }) => value);
+    
+    nf.innerText = `${jumble[0]} ${jumble[1]}\n${jumble[2]}`;
+</script>
