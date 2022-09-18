@@ -10,3 +10,6 @@ nav:
     - name: ChatSurf
       image: /assets/unsplash-surf.jpg
       link: /stuff/chatsurf
+    - name: goum.cf
+      image: /assets/unsplash-phone.jpg
+      link: /stuff/goum-cf
